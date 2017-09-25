@@ -8,6 +8,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/* Base Styles */
+/*
+  Hint: these tend to be
+  1. element selectors
+  2. concerned with color and typography
+  3. basic element presenation
+*/
+
+
 /* Responsive Media */
 img,
 video,
@@ -15,3 +24,31 @@ audio {
   display: block;
   max-width: 100%;
 }
+
+/* Layout Styles */
+/*
+  Hint: these tend to be
+  1. IDs; but also classes, sometimes
+  2. concerned with layout and spatial
+     relationships
+*/
+
+
+/* Modular Styles */
+/*
+  Repeating style patterns.
+  Hint: these tend to be:
+  1. classes and relationship selectors
+  2. concerned with adjustments to base styles,
+      spacing, color, etc. etc.
+*/
+
+/* State Styles */
+/*
+  States of the browser and user access
+  conditions.
+  Hint: these tend to be:
+  1. Driven by media queries
+  2. Influenced by JavaScript
+  3. Organized by Base, Layout, Module, State
+*/
