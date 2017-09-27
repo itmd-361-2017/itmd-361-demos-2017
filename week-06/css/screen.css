@@ -47,8 +47,8 @@ ul {
 }
 li ol,
 li ul {
-  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
-  padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
+  padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
+  padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
   padding-bottom: 0;
 }
 li ol {
