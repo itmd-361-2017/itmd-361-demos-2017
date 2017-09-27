@@ -16,6 +16,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   3. basic element presenation
 */
 
+html {
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding-bottom: 22px;
+  padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
+}
+
+li {
+  padding-bottom: 11px;
+}
+ol,ul {
+  padding-padding: 11px;
+}
 
 /* Responsive Media */
 img,
