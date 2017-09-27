@@ -21,12 +21,11 @@ html {
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
 }
 h1,h2,h3,h4,h5,h6,p {
-  padding-bottom: 22px;
   padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
 }
 
 li {
-  padding-bottom: 11px;
+  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
 }
 ol,ul {
   padding-padding: 11px;
