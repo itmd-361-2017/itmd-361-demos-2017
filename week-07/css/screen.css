@@ -20,7 +20,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   Setting type with a 4:3 modular scale
   http://www.modularscale.com/?18&px&1.333
 */
-
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
@@ -119,3 +118,16 @@ audio {
   2. Influenced by JavaScript
   3. Organized by Base, Layout, Module, State
 */
+
+@media screen and (min-width: 375px) {
+  body {
+    padding-right: 11.73333333%; /* 44 / 375 = 11.73333333% */
+    padding-left: 11.73333333%; /* 44 / 375 = 11.73333333% */
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 1.25em; /* 20 / 16 = 1.25em */
+  }
+}
