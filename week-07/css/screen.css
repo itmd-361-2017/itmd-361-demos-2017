@@ -185,4 +185,12 @@ audio {
   #footer {
     clear: both;
   }
+  .flexbox #primary,
+  .flexbox #supporting {
+    float: none;
+    margin-left: 0;
+  }
+  .flexbox #content {
+    display: flex;
+  }
 }
