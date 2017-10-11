@@ -189,8 +189,10 @@ audio {
   .flexbox #supporting {
     float: none;
     margin-left: 0;
+    flex: 0 1 auto; /* The default; here for demo purposes */
   }
   .flexbox #content {
     display: flex;
+    justify-content: space-between;
   }
 }
