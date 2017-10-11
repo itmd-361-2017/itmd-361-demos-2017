@@ -121,6 +121,14 @@ audio {
   color: white;
   background-color: red;
 }
+.flexbox #navigation ul {
+  display: flex;
+}
+.flexbox #navigation li {
+  float: none;
+}
+
+
 
 /* Modular Styles */
 /*
