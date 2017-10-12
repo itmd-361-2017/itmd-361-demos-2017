@@ -203,4 +203,22 @@ audio {
     display: flex;
     justify-content: space-between;
   }
+  .cssgrid #content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-column-gap: 25px;
+  }
+  .cssgrid #primary,
+  .cssgrid #supporting {
+    width: auto;
+  }
+  .cssgrid #primary {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .cssgrid #supporting {
+    grid-column: 3;
+    grid-row: 2;
+  }
 }
