@@ -56,8 +56,39 @@ audio {
      relationships
 */
 
+/*
+  5-column grid
+  100px-wide columns
+  20px-wide gutters
+  4-column module = 400 + 60 = 460px
+  3-column module = 300 + 40 = 340px
+  2-column module = 200 + 20 = 220px
+  1-column module = 100px
+*/
 
-
+@media screen and (min-width: 800px) {
+  .photo img {
+    width: 79.31034483%; /* 460 / 580 = 0.7931034483 */
+    float: left;
+  }
+  .photo figcaption {
+    width: 17.24137931%; /* 100 / 580 = 0.1724137931 */
+    float: left;
+    margin-left: 3.448275862%; /* 20 / 580 = 0.03448275862 */
+  }
+  footer {
+    clear: both;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .photo img {
+    width: 58.62068966%; /* 340 / 580 = 0.5862068966 */
+  }
+  .photo figcaption {
+    width: 37.93103448%; /* 220 / 580 = 0.3793103448 */
+    margin-left: 3.448275862%; /* 20 / 580 = 0.03448275862 */
+  }
+}
 /* Modular Styles */
 /*
   Repeating style patterns.
