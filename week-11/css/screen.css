@@ -123,3 +123,12 @@ audio {
   2. Influenced by JavaScript
   3. Organized by Base, Layout, Module, State
 */
+
+.is-highlighted {
+  background: pink;
+  transition: background 3s;
+}
+
+.js body {
+  border-top: 3em solid red;
+}
