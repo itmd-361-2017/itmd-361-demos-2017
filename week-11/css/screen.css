@@ -132,3 +132,13 @@ audio {
 .js body {
   border-top: 3em solid red;
 }
+
+.js abbr[title] {
+  cursor: pointer;
+}
+
+abbr[title].expanded {
+  cursor: unset;
+  text-decoration: none;
+  border-bottom: 0;
+}

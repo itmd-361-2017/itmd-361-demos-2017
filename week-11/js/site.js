@@ -14,4 +14,12 @@ $.noConflict();
     e.preventDefault();
   });
 
+  $('abbr[title]').one('click', function() {
+    // <abbr title="Blah">B</abbr> -> <abbr>Blah (B)</abbr>
+    $(this).text(
+      $(this).attr('title') + " (" + $(this).text() + ")"
+    );
+    $(this).addClass('expanded');
+  });
+
 })(jQuery);
