@@ -4,6 +4,8 @@ $.noConflict();
 // Re-introduce dollar sign scoped to self-executing
 // function
 (function($) {
+  var doorbell = new Audio('media/doorbell.mp3');
+
   $('#masthead').html('OMG jQuery');
   $('html').removeClass('no-js').addClass('js');
 
@@ -28,4 +30,9 @@ $.noConflict();
     // Remove it from the DOM tree:
     $(this).remove();
   });
+
+  $('#doorbell').on('click', function() {
+    doorbell.play();
+  });
+
 })(jQuery);
