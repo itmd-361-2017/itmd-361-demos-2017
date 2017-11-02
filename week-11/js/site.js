@@ -35,4 +35,8 @@ $.noConflict();
     doorbell.play();
   });
 
+  $('video').on('click', function() {
+    this.paused ? this.play() : this.pause();
+  });
+
 })(jQuery);
