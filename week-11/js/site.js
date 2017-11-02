@@ -22,4 +22,10 @@ $.noConflict();
     $(this).addClass('expanded');
   });
 
+  $($('li')[2]).on('click', function() {
+    // Visually hide the element:
+    // $(this).addClass('hide');
+    // Remove it from the DOM tree:
+    $(this).remove();
+  });
 })(jQuery);

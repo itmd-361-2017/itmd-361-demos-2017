@@ -142,3 +142,8 @@ abbr[title].expanded {
   text-decoration: none;
   border-bottom: 0;
 }
+
+.hide {
+  transition: opacity 1s;
+  opacity: 0;
+}
