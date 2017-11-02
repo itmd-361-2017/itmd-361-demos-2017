@@ -6,4 +6,12 @@ $.noConflict();
 (function($) {
   $('#masthead').html('OMG jQuery');
   $('html').removeClass('no-js').addClass('js');
+
+  $('a[href^="http"]').on('click', function(e) {
+    // open a new window (this is BAD PRACTICE, but a good first
+    // example for events):
+    window.open($(this).attr('href'));
+    e.preventDefault();
+  });
+
 })(jQuery);
