@@ -89,7 +89,7 @@ audio {
   max-width: 100%;
 }
 
-video {
+video.portrait {
   height: 90vh;
 }
 
