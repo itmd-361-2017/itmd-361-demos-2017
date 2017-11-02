@@ -89,6 +89,10 @@ audio {
   max-width: 100%;
 }
 
+video {
+  height: 90vh;
+}
+
 /* Layout Styles */
 /*
   Hint: these tend to be
