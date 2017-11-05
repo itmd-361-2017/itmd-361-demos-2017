@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body,.stylelint{line-height:inherit}ol,ul,.stylelint{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+/* Base Styles */
+/*
+  Hint: these tend to be
+  1. element selectors
+  2. concerned with color and typography
+  3. basic element presenation
+*/
+
+/*
+  Setting type with a 4:3 modular scale
+  http://www.modularscale.com/?18&px&1.333
+*/
+html {
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
+}
+body {
+  padding: 1.222em; /* 22 / 18 = 1.2222222222 */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
+}
+
+h1 {
+  font-size: 2.369em; /* 42.635 / 18 = 2.369 */
+  line-height: 1.032em; /* 44 / 42.635 = 1.032 */
+  padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
+}
+h2 {
+  font-size: 1.777em; /* 31.984 / 18 = 1.777 */
+  line-height: 1.032em; /* 33 / 31.984 = 1.032 */
+  padding-bottom: 0.688em; /* 22 / 31.984 = 0.688 */
+}
+h3 {
+  font-weight: bold;
+}
+
+ol, ul {
+  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
+}
+ol {
+  list-style-type: decimal;
+}
+ul {
+  list-style-type: square;
+}
+li ol,
+li ul {
+  padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
+  padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
+  padding-bottom: 0;
+}
+li ol {
+  list-style-type: lower-alpha;
+}
+li li ol {
+  list-style-type: lower-roman;
+}
+li {
+  padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
+}
+li li:last-child {
+  padding-bottom: 0;
+}
+
+/* Responsive Media */
+img,
+video,
+audio {
+  display: block;
+  max-width: 100%;
+}
+
+video.portrait {
+  height: 90vh;
+}
+
+/* Layout Styles */
+/*
+  Hint: these tend to be
+  1. IDs; but also classes, sometimes
+  2. concerned with layout and spatial
+     relationships
+*/
+
+
+/* Modular Styles */
+/*
+  Repeating style patterns.
+  Hint: these tend to be:
+  1. classes and relationship selectors
+  2. concerned with adjustments to base styles,
+      spacing, color, etc. etc.
+*/
+
+#navigation ul,
+#navigation li {
+  list-style-type: none;
+  padding-bottom: 0;
+}
+
+
+/* State Styles */
+/*
+  States of the browser and user access
+  conditions.
+  Hint: these tend to be:
+  1. Driven by media queries
+  2. Influenced by JavaScript
+  3. Organized by Base, Layout, Module, State
+*/
+
+.is-highlighted {
+  background: pink;
+  transition: background 3s;
+}
+
+.js body {
+  border-top: 3em solid red;
+}
+
+.js abbr[title] {
+  cursor: pointer;
+}
+
+abbr[title].expanded {
+  cursor: unset;
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+.hide {
+  transition: opacity 1s;
+  opacity: 0;
+}
