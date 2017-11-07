@@ -121,6 +121,10 @@ audio {
   color: white;
   background-color: red;
 }
+#navigation a:active,
+#navigation a:focus {
+  background-color: blue;
+}
 .flexbox #navigation ul {
   display: flex;
 }
