@@ -25,7 +25,7 @@ html {
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
 }
 body {
-  padding-top: 3.667em; /* 66 / 18 = 3.667... */
+  padding-top: 13.444em; /* 242px = 10 lines of nav + 1 line of space */
   padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
 }
@@ -98,25 +98,19 @@ audio {
   2. concerned with layout and spatial
      relationships
 */
-
 #navigation {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: cyan;
 }
-#navigation li {
-  float: left;
-  width: 33.3333333333%;
-  background-color: green;
-}
+
 #navigation a {
   display: block;
-  width: 100%;
   padding-top: 0.611em; /* 11 / 18 = 0.611 */
   padding-bottom: 0.611em;
-  text-align: center;
+  padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
+  padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
   text-decoration: none;
   color: white;
   background-color: red;
@@ -125,14 +119,26 @@ audio {
 #navigation a:focus {
   background-color: blue;
 }
-.flexbox #navigation ul {
-  display: flex;
-}
-.flexbox #navigation li {
-  float: none;
-}
 
 
+@media screen and (min-width: 430px) {
+  body {
+    padding-top: 3.667em; /* 66 / 18 = 3.667... */
+  }
+  #navigation a {
+    text-align: center;
+  }
+  #navigation li {
+    float: left;
+    width: 20%;
+  }
+  .flexbox #navigation ul {
+    display: flex;
+  }
+  .flexbox #navigation li {
+    float: none;
+  }
+}
 
 /* Modular Styles */
 /*
