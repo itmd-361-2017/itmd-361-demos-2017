@@ -5,3 +5,7 @@
 /* eslint-enable */
 $('html').addClass('js').removeClass('no-js')
 $('#navigation').prepend('<h2><a href="#navigation">Menu</a></h2>');
+$('#navigation a[href="#navigation"]').on('click', function() {
+  $('#navigation ul').toggleClass('is-visible');
+  $('body').toggleClass('is-showing-expanded-nav');
+});
