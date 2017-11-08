@@ -30,6 +30,10 @@ body {
   padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
 }
+body:after {
+  display: none;
+  content: "mobile";
+}
 
 
 h1,
@@ -125,6 +129,9 @@ audio {
 @media screen and (min-width: 430px) {
   body {
     padding-top: 3.667em; /* 66 / 18 = 3.667... */
+  }
+  body:after {
+    content: "larger-screen";
   }
   #navigation a {
     text-align: center;
