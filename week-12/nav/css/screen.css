@@ -125,29 +125,6 @@ audio {
   background-color: blue;
 }
 
-
-@media screen and (min-width: 430px) {
-  body {
-    padding-top: 3.667em; /* 66 / 18 = 3.667... */
-  }
-  body:after {
-    content: "larger-screen";
-  }
-  #navigation a {
-    text-align: center;
-  }
-  #navigation li {
-    float: left;
-    width: 20%;
-  }
-  .flexbox #navigation ul {
-    display: flex;
-  }
-  .flexbox #navigation li {
-    float: none;
-  }
-}
-
 /* Modular Styles */
 /*
   Repeating style patterns.
@@ -174,10 +151,54 @@ audio {
   3. Organized by Base, Layout, Module, State
 */
 
+
+.js body {
+  padding-top: 3.667em; /* 66 / 18 = 3.667... */
+}
+.js body.is-showing-expanded-nav {
+  padding-top: 15.888em; /* 286px / 18px = 15.88... */
+}
+.js h2 {
+  font-size: inherit;
+  line-height: inherit;
+  padding-bottom: 0;
+}
+.js #navigation ul {
+  display: none;
+}
+.js #navigation ul.is-visible {
+  display: block;
+}
+
 @media screen and (min-width: 375px) {
   body {
     padding-right: 11.73333333%; /* 44 / 375 = 11.73333333% */
     padding-left: 11.73333333%; /* 44 / 375 = 11.73333333% */
+  }
+}
+
+@media screen and (min-width: 430px) {
+  body {
+    padding-top: 3.667em; /* 66 / 18 = 3.667... */
+  }
+  body:after {
+    content: "larger-screen";
+  }
+  #navigation a {
+    text-align: center;
+  }
+  .js #navigation ul {
+    display: block;
+  }
+  #navigation li {
+    float: left;
+    width: 20%;
+  }
+  .flexbox #navigation ul {
+    display: flex;
+  }
+  .flexbox #navigation li {
+    float: none;
   }
 }
 
@@ -239,22 +260,4 @@ audio {
     grid-column: 3;
     grid-row: 2;
   }
-}
-
-.js body {
-  padding-top: 3.667em; /* 66 / 18 = 3.667... */
-}
-.js body.is-showing-expanded-nav {
-  padding-top: 15.888em; /* 286px / 18px = 15.88... */
-}
-.js h2 {
-  font-size: inherit;
-  line-height: inherit;
-  padding-bottom: 0;
-}
-.js #navigation ul {
-  display: none;
-}
-.js #navigation ul.is-visible {
-  display: block;
 }
