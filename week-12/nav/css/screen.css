@@ -151,6 +151,10 @@ audio {
 .js body {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
 }
+.js body:after {
+  content: "mobile";
+  display: none;
+}
 .js body.is-showing-expanded-nav {
   padding-top: 15.888em; /* 286px / 18px = 15.88... */
 }
@@ -176,6 +180,9 @@ audio {
 @media screen and (min-width: 430px) {
   body {
     padding-top: 3.667em; /* 66 / 18 = 3.667... */
+  }
+  .js body:after {
+    content: "larger-screen";
   }
   #navigation a {
     text-align: center;
