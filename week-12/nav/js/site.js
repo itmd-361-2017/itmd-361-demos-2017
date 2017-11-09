@@ -7,9 +7,10 @@
 
 $('html').addClass('js').removeClass('no-js');
 
-document.addEventListener('DOMContentLoaded', toggleNavigation);
-window.addEventListener('resize', toggleNavigation);
-
+//document.addEventListener('DOMContentLoaded', toggleNavigation);
+//window.addEventListener('resize', toggleNavigation);
+toggleNavigation(); // call on document ready event
+$(window).on('resize', toggleNavigation);
 
 function toggleNavigation() {
   if(responsiveSize('mobile')) {
