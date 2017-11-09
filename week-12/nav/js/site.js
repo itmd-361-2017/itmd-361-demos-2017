@@ -10,6 +10,21 @@ $('#navigation a[href="#navigation"]').on('click', function() {
   $('body').toggleClass('is-showing-expanded-nav');
 });
 
+toggledNavigation();
+$(window).on('resize', toggledNavigation)
+
+function toggledNavigation() {
+  if(responsiveSize('mobile')) {
+    // this is at mobile size
+    console.log("Is a mobile size");
+  } else {
+    // this is not
+    console.log("Is NOT a mobile size");
+  }
+}
+
+
+
 function responsiveSize(target) {
   var size = window
     .getComputedStyle(document.body, ':after')
