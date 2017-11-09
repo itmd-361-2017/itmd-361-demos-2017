@@ -9,3 +9,14 @@ $('#navigation a[href="#navigation"]').on('click', function() {
   $('#navigation ul').toggleClass('is-visible');
   $('body').toggleClass('is-showing-expanded-nav');
 });
+
+function responsiveSize(target) {
+  var size = window
+    .getComputedStyle(document.body, ':after')
+    .getPropertyValue('content');
+  var is_target_size = true;
+  if(size.indexOf(target) === -1) {
+    is_target_size = false;
+  }
+  return is_target_size;
+}
