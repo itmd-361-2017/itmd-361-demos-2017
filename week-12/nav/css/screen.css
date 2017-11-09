@@ -122,25 +122,6 @@ audio {
 }
 
 
-@media screen and (min-width: 430px) {
-  body {
-    padding-top: 3.667em; /* 66 / 18 = 3.667... */
-  }
-  #navigation a {
-    text-align: center;
-  }
-  #navigation li {
-    float: left;
-    width: 20%;
-  }
-  .flexbox #navigation ul {
-    display: flex;
-  }
-  .flexbox #navigation li {
-    float: none;
-  }
-}
-
 /* Modular Styles */
 /*
   Repeating style patterns.
@@ -189,6 +170,25 @@ audio {
   body {
     padding-right: 11.73333333%; /* 44 / 375 = 11.73333333% */
     padding-left: 11.73333333%; /* 44 / 375 = 11.73333333% */
+  }
+}
+
+@media screen and (min-width: 430px) {
+  body {
+    padding-top: 3.667em; /* 66 / 18 = 3.667... */
+  }
+  #navigation a {
+    text-align: center;
+  }
+  #navigation li {
+    float: left;
+    width: 20%;
+  }
+  .flexbox #navigation ul {
+    display: flex;
+  }
+  .flexbox #navigation li {
+    float: none;
   }
 }
 
