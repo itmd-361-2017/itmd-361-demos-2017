@@ -10,6 +10,7 @@ $('#navigation a[href="#navigation"]').on('click', function() {
   $('body').toggleClass('is-showing-expanded-nav');
 });
 
+// TODO: fix this $(document).on('ready', toggledNavigation);
 toggledNavigation();
 $(window).on('resize', toggledNavigation)
 
