@@ -152,7 +152,7 @@ audio {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
 }
 .js body:after {
-  content: "mobile";
+  content: "expanded-nav";
   display: none;
 }
 .js body.is-showing-expanded-nav {
@@ -182,7 +182,7 @@ audio {
     padding-top: 3.667em; /* 66 / 18 = 3.667... */
   }
   .js body:after {
-    content: "larger-screen";
+    content: "";
   }
   #navigation a {
     text-align: center;
