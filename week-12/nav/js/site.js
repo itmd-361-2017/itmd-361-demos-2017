@@ -11,7 +11,7 @@ toggledNavigation();
 $(window).on('resize', toggledNavigation)
 
 function toggledNavigation() {
-  if(responsiveSize('mobile')) {
+  if(responsiveFeature('expanded-nav')) {
     if($('#navigation h2').length === 0) {
       // console.log("Is a mobile size");
       $('#navigation').prepend('<h2><a href="#navigation">Menu</a></h2>');
@@ -30,13 +30,13 @@ function toggledNavigation() {
 
 
 
-function responsiveSize(target) {
+function responsiveFeature(feature) {
   var size = window
     .getComputedStyle(document.body, ':after')
     .getPropertyValue('content');
-  var is_target_size = true;
-  if(size.indexOf(target) === -1) {
-    is_target_size = false;
+  var has_feature = true;
+  if(size.indexOf(feature) === -1) {
+    has_feature = false;
   }
-  return is_target_size;
+  return has_feature;
 }
