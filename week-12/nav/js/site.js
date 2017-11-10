@@ -14,9 +14,10 @@ function toggledNavigation() {
     if($('#navigation h2').length === 0) {
       // console.log("Is a mobile size");
       $('#navigation').prepend('<h2><a href="#navigation">Menu</a></h2>');
-      $('#navigation a[href="#navigation"]').on('click', function() {
+      $('#navigation a[href="#navigation"]').on('click', function(e) {
         $('#navigation ul').toggleClass('is-visible');
         $('body').toggleClass('is-showing-expanded-nav');
+        e.preventDefault();
       });
     }
   } else {
