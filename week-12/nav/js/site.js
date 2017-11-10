@@ -21,8 +21,10 @@ function toggledNavigation() {
       });
     }
   } else {
-    // this is not
     console.log("Is NOT a mobile size");
+    $('#navigation h2').remove();
+    $('#navigation ul').removeClass('is-visible');
+    $('body').removeClass('is-showing-expanded-nav');
   }
 }
 
