@@ -5,10 +5,9 @@
 /* eslint-enable */
 $('html').addClass('js').removeClass('no-js')
 
-
-// TODO: fix this $(document).on('ready', toggledNavigation);
-toggledNavigation();
-$(window).on('resize', toggledNavigation)
+// Run toggledNavigation function on load and resize events:
+$(document).ready(toggledNavigation());
+$(window).on('resize', toggledNavigation);
 
 function toggledNavigation() {
   if(responsiveFeature('expanded-nav')) {
