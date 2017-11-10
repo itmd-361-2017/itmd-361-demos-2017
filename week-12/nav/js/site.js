@@ -13,7 +13,7 @@ $(window).on('resize', toggledNavigation)
 function toggledNavigation() {
   if(responsiveSize('mobile')) {
     if($('#navigation h2').length === 0) {
-      console.log("Is a mobile size");
+      // console.log("Is a mobile size");
       $('#navigation').prepend('<h2><a href="#navigation">Menu</a></h2>');
       $('#navigation a[href="#navigation"]').on('click', function() {
         $('#navigation ul').toggleClass('is-visible');
@@ -21,7 +21,7 @@ function toggledNavigation() {
       });
     }
   } else {
-    console.log("Is NOT a mobile size");
+    // console.log("Is NOT a mobile size");
     $('#navigation h2').remove();
     $('#navigation ul').removeClass('is-visible');
     $('body').removeClass('is-showing-expanded-nav');
