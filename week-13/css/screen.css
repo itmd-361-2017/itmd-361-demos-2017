@@ -81,6 +81,10 @@ li li:last-child {
   padding-bottom: 0;
 }
 
+label {
+  display: block;
+}
+
 /* Responsive Media */
 img,
 video,
@@ -117,7 +121,13 @@ video.portrait {
   padding-bottom: 0;
 }
 
-
+form ol,
+form ol li {
+  list-style-type: none;
+}
+label[for='accept-terms'] {
+  display: inline;
+}
 /* State Styles */
 /*
   States of the browser and user access
