@@ -22,6 +22,10 @@ h1 {
   line-height: -toEm((1.5*$base_line_height), 27)
 }
 
+@media screen and (min-width: -toEm(750,16)) {
+  /* 750 styles */
+}
+
 .callout {
   color: $primary_color;
   background: lighten($secondary_color, 20%);
