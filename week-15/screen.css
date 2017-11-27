@@ -1,0 +1,21 @@
+html {
+  color: #EEE;
+  background-color: #222;
+}
+
+.callout {
+  color: #EEE;
+  background: #555555;
+}
+
+nav {
+  border: 1px solid red;
+}
+nav ul {
+  background-color: orange;
+}
+nav ul li {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=screen.css.map */

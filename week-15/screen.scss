@@ -1,0 +1,22 @@
+$primary_color: #EEE;
+$secondary_color: #222;
+
+html {
+  color: $primary_color;
+  background-color: $secondary_color;
+}
+
+.callout {
+  color: $primary_color;
+  background: lighten($secondary_color, 20%);
+}
+
+nav {
+  border: 1px solid red;
+  ul {
+    background-color: orange;
+    li {
+      display: inline-block;
+    }
+  }
+}
