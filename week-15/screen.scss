@@ -1,9 +1,23 @@
 $primary_color: #EEE;
 $secondary_color: #222;
+$base_font_size: 19;
+$base_line_height: 24;
+
+@function -toEm($target,$context:$base_font_size) {
+  @return ($target / $context) * 1em;
+}
+
 
 html {
+  font-size: -toEm($base_font_size,16);
+  line-height: -toEm($base_line_height);
   color: $primary_color;
   background-color: $secondary_color;
+}
+/* Modular Scale: http://www.modularscale.com/?19&px&1.25 */
+h1 {
+  font-size: -toEm($base_font_size*1.25*1.25*1.25);
+  line-height: -toEm((1.5*$base_line_height), 27)
 }
 
 .callout {

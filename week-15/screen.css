@@ -1,6 +1,14 @@
 html {
+  font-size: 1.1875em;
+  line-height: 1.2631578947em;
   color: #EEE;
   background-color: #222;
+}
+
+/* Modular Scale: http://www.modularscale.com/?19&px&1.25 */
+h1 {
+  font-size: 1.953125em;
+  line-height: 1.3333333333em;
 }
 
 .callout {
