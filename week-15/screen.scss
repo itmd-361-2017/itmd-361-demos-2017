@@ -4,6 +4,8 @@ $primary_color: #EEE;
 $secondary_color: #222;
 $base_font_size: 19;
 $base_line_height: 24;
+$primary_typeface: Helvetica, Arial, Trebuchet, sans-serif;
+$secondary_typeface: Georgia, "Times New Roman", Times, Roman, serif;
 
 @function -toEm($target,$context:$base_font_size) {
   @return ($target / $context) * 1em;
@@ -17,10 +19,14 @@ $base_line_height: 24;
 html {
   font-size: -toEm($base_font_size,16);
   line-height: -toEm($base_line_height);
+  font-family: $primary_typeface;
   color: $primary_color;
   background-color: $secondary_color;
 }
 /* Modular Scale: http://www.modularscale.com/?19&px&1.25 */
+h1,h2,h3,h4,h5,h6 {
+  font-family: $secondary_typeface;
+}
 h1 {
   font-size: -toEm($base_font_size*1.25*1.25*1.25);
   line-height: -toEm((1.5*$base_line_height), 27)
