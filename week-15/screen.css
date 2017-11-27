@@ -58,6 +58,17 @@ h1 {
 
 @media screen and (min-width: 46.875em) {
   /* 750 styles */
+  #content {
+    width: 53.3333333333%;
+    float: left;
+  }
+  .flexbox #content {
+    float: none;
+    display: flex;
+  }
+  .flexbox #content aside {
+    flex-basis: 20%;
+  }
 }
 .callout {
   color: #EEE;

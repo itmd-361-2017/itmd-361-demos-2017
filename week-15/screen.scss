@@ -9,6 +9,10 @@ $base_line_height: 24;
   @return ($target / $context) * 1em;
 }
 
+@function -toPct($target,$context) {
+  @return ($target / $context) * 100%;
+}
+
 
 html {
   font-size: -toEm($base_font_size,16);
@@ -24,6 +28,17 @@ h1 {
 
 @media screen and (min-width: -toEm(750,16)) {
   /* 750 styles */
+  #content {
+    width: -toPct(400,750);
+    float: left;
+    .flexbox & {
+      float: none;
+      display: flex;
+      & aside {
+        flex-basis: 20%;
+      }
+    }
+  }
 }
 
 .callout {
